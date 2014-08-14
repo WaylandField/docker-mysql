@@ -37,4 +37,4 @@ ADD docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 3306
-CMD ["mysqld", "--datadir=/var/lib/mysql", "--user=mysql"]
+CMD ["mysqld", "--datadir=/var/lib/mysql", "--user=mysql", "--lower_case_table_names=1"]
